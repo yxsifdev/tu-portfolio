@@ -1,5 +1,3 @@
-![image](https://github.com/yxsifdev/tu-portfolio/assets/161224634/6102a393-3ac5-4ef3-ab02-d60072ecafdd)# Astro Starter Kit: Basics
-
 ```sh
 npm create astro@latest -- --template basics
 ```
