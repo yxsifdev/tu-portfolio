@@ -9,4 +9,4 @@ git clone https://github.com/yxsifdev/tu-portfolio.git
 | Comando                   | Acción                                           |
 | :------------------------ | :----------------------------------------------- |
 | `pnpm install`            | Installs dependencies                            |
-| `pnpm run dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm run dev`            | Starts local dev server at `localhost:4321`      |
