@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+![image](https://github.com/yxsifdev/tu-portfolio/assets/161224634/6102a393-3ac5-4ef3-ab02-d60072ecafdd)# Astro Starter Kit: Basics
 
 ```sh
 npm create astro@latest -- --template basics
@@ -10,7 +10,8 @@ npm create astro@latest -- --template basics
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+![image](https://github.com/yxsifdev/tu-portfolio/assets/161224634/d1b0a668-c474-4658-bdc5-218089203464)
+
 
 ## 🚀 Project Structure
 
