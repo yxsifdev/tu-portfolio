@@ -1,0 +1,19 @@
+{
+    "basic": {
+        "name": "Yosif Blanco Tafur",
+        "description": "Desarrollador Frontend con experiencia en diseño UI/UX.",
+        "nickname": "yxsifdev",
+        "label": "Desarrollador Frontend",
+        "location": {
+            "city": "Lima",
+            "country": "Perú"
+        },
+        "experience": "+2 años de experiencia como desarrollador frontend."
+    },
+    "social": {
+        "linkedin": "https://linkedin.com/in/yosifbt",
+        "github": "https://github.com/yxsifdev",
+        "x": "https://x.com/yxsifdev",
+        "instagram": "https://instagram.com/yxsif.dev"
+    }
+}

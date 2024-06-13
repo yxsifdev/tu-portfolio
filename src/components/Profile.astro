@@ -1,0 +1,104 @@
+---
+import profileData from "@profile";
+import yxsifdevProfile from "@/imgs/yxsifdev-profile.webp";
+const { basic, social } = profileData;
+const { name, description, label, location, experience } = basic;
+const { city, country } = location;
+const { linkedin, github, x, instagram } = social;
+import Instagram from "@/icons/Instagram.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import GitHub from "@/icons/GitHub.astro";
+import X from "@/icons/X.astro";
+---
+
+<div
+  class="w-full lg:w-[300px] max-w-full p-5 border border-borderColor rounded-lg"
+>
+  <div class="flex flex-col items-center text-center mb-5">
+    <img
+      src={yxsifdevProfile.src}
+      alt="yxsifdevProfile"
+      class="rounded-full -mt-20 size-32 mb-5"
+    />
+    <h1 class="text-2xl text-yellow-400 font-medium">{name}</h1>
+    <p class="mb-3">{label}</p>
+    <a
+      href={linkedin}
+      target="_blank"
+      class="flex items-center transition md:justify-center"
+    >
+      <div class="flex items-center">
+        <span class="relative inline-flex overflow-hidden rounded-full p-[1px]">
+          <span
+            class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"
+          ></span>
+          <div
+            class="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-green-800 bg-green-100 rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap"
+          >
+            Disponible para trabajar
+          </div>
+        </span>
+      </div>
+    </a>
+  </div>
+  <div class="flex flex-col gap-5">
+    <div>
+      <span class="text-yellow-400 font-medium text-sm">CIUDAD/PAÍS</span>
+      <p>{city}, {country}</p>
+    </div>
+    <div>
+      <span class="text-yellow-400 font-medium text-sm"
+        >NIVEL DE EXPERIENCIA</span
+      >
+      <p>{experience}</p>
+    </div>
+    <div>
+      <span class="text-yellow-400 font-medium text-sm">BIOGRAFÍA</span>
+      <p>{description}</p>
+    </div>
+    <div>
+      <span class="text-yellow-400 font-medium text-sm">VÍNCULOS</span>
+      <br />
+      {
+        linkedin && (
+          <a href={linkedin} target="_blank" class="inline-flex gap-1">
+            <LinkedIn />{" "}
+            {linkedin.length > 30
+              ? `${linkedin.slice(8, 30)}...`
+              : `${linkedin.slice(8)}`}
+          </a>
+        )
+      }
+      <br />
+      {
+        github && (
+          <a href={github} target="_blank" class="inline-flex gap-1">
+            <GitHub />{" "}
+            {github.length > 30
+              ? `${github.slice(8, 30)}...`
+              : `${github.slice(8)}`}
+          </a>
+        )
+      }
+      <br />
+      {
+        x && (
+          <a href={x} target="_blank" class="inline-flex gap-1">
+            <X /> {x.length > 30 ? `${x.slice(8, 30)}...` : `${x.slice(8)}`}
+          </a>
+        )
+      }
+      <br />
+      {
+        instagram && (
+          <a href={instagram} target="_blank" class="inline-flex gap-1">
+            <Instagram />{" "}
+            {instagram.length > 30
+              ? `${instagram.slice(8, 30)}...`
+              : `${instagram.slice(8)}`}
+          </a>
+        )
+      }
+    </div>
+  </div>
+</div>
